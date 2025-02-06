@@ -41,7 +41,7 @@ export default {
     display: grid;
     width: 1000px;
     margin-left: 80px;
-    grid-template-columns: repeat(7 ,1fr);
+    grid-template-columns: repeat(8 ,1fr);
   }
   .bottom2{
     margin-top: 35px;
@@ -52,26 +52,36 @@ export default {
   }
   #skill{
     border-radius: 20px;
-    width: 105px;
-    height:100px;
+    width: 5ch;
+    height:5ch;
     transition: 1s;
   }
 
   #skill:hover{
-    transform: rotate(10deg);
+    transform: scale(1.5);
+}
+  #softSkills{
+    border-radius: 20px;
+    width: 80px;
+    height:80px;
+    transition: 1s;
+  }
+
+  #softSkills:hover{
+    transform: scale(1.2);
 }
 
   /* badges */
 
   #achieve{
     border-radius: 10px;
-    width: 105px;
-    height:100px;
+    width: 80x;
+    height:80px;
     transition: 1s;
   }
 
   #achieve:hover{
-    transform: rotate(10deg);
+    transform: scale(1.2);;
   }
 
   .bottom3{
@@ -79,7 +89,8 @@ export default {
     display: grid;
     width: 800px;
     margin-left: 230px;
-    grid-template-columns: repeat(5 ,1fr);
+    grid-template-columns: repeat(6 ,1fr);
+    gap: 3em;
   }
 
   /* media queries */

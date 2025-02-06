@@ -24,7 +24,7 @@
   </section>
 
   <section id="about">
-        <h1 id="about">About</h1>
+        <h1 id="about1">About</h1>
           <div id="about_info">
             <div>
               <h2 class="aboutHead">A little bit about me:</h2>
@@ -64,7 +64,7 @@
                 <section v-for="soft in softSkillsData()" :key="soft">
                   <soft-skills-comp>
                     <template #softImg>
-                      <img :src='soft.softImg' id="skill">
+                      <img :src='soft.softImg' id="softSkills">
                     </template>
                     <template #soft>
                       <h4 class="skillText">{{soft.soft}}</h4>
@@ -98,7 +98,7 @@
      <section id="Edu">
           <div>
             <div>
-                <h2>Education</h2>
+                <h2 class="eduhead">Education</h2>
             </div>
             <div class="edu">
                 <section  class="ed" v-for="education in educationData()" :key="education">
@@ -161,7 +161,7 @@
         </div>
         <div class="projects">
             <section id="proj-card" v-for="projects in projectsData()" :key="projects">
-                <projects-comp>
+              <projects-comp>
                 <template #Pimage>
                     <img :src="projects.Pimage" class="project-image" >
                 </template>
@@ -283,8 +283,13 @@ export default {
 
 /* Headers */
 
+#about1{
+  margin-top: 60px;
+}
 
-
+.eduhead{
+  margin-bottom: 40px;
+}
 
 
 
@@ -561,6 +566,7 @@ h2{
 .contact-head{
     width: 260px;
     padding-top: 30px;
+    margin-left: 40px;
 }
 @keyframes rotate{
   100% {transform: rotate(360deg);}
