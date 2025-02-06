@@ -14,8 +14,23 @@
 
     <div class="navbar-menu" :class="{ 'is-active': isMenuActive }">
       <div class="navbar-start">
-        <router-link to="/">Home</router-link>
-        <router-link to="/about">About</router-link>
+        <ul>
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#Edu">Education</a>
+          </li>
+          <li>
+            <a href="#project">Projects</a>
+          </li>
+          <li>
+            <a href="#contacts">Contacts</a>
+          </li>
+        </ul>
       </div>
     </div>
   </nav>
@@ -52,6 +67,30 @@ export default {
   z-index: 1000;
 }
 
+.navbar-start ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-start li {
+  display: inline-block;
+}
+
+.navbar-start a {
+  text-decoration: none;
+  color: #000000;
+  padding: 10px;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar-start a:hover {
+  color: #2471be;
+}
+
+
 .navbar-item {
   color: #f1f1f1;
   padding: 10px;
@@ -85,6 +124,23 @@ export default {
 @media (max-width: 500px) {
   .navbar {
   width: 80%;
+}
+
+@media (max-width: 500px) {
+  .navbar-start ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-start li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar-start a {
+    width: 100%;
+  }
 }
 
   /* Display the hamburger menu on small screens */

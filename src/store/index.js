@@ -37,7 +37,7 @@ export default createStore({
   },
   actions: {
     async getData({commit}){
-      let fetchInfo = await fetch ('https://mrshane06.github.io/personal-json/data/data.json')
+      let fetchInfo = await fetch ('https://mrshane06.github.io/keegan-json/data/data.json')
       let data = await fetchInfo.json()
       let {about,education,experiences,skills,softSkills,achievements,projects} = data
       commit('setAbout',about)

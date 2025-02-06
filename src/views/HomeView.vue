@@ -24,7 +24,7 @@
   </section>
 
   <section id="about">
-        <h1 id="gun">About</h1>
+        <h1 id="about">About</h1>
           <div id="about_info">
             <div>
               <h2 class="aboutHead">A little bit about me:</h2>
@@ -67,7 +67,7 @@
                       <img :src='soft.softImg' id="skill">
                     </template>
                     <template #soft>
-                      <h4 class="skillText">{{soft.soft}}</h4> 
+                      <h4 class="skillText">{{soft.soft}}</h4>
                     </template>
                   </soft-skills-comp>
                 </section>
@@ -82,7 +82,7 @@
                       <img :src='ach.badges' id="achieve">
                     </template>
                     <template #name>
-                      <h4 class="skillText">{{ach.name}}</h4> 
+                      <h4 class="skillText">{{ach.name}}</h4>
                     </template>
                   </achievements-comp>
                 </section>
@@ -91,6 +91,140 @@
         </div>
      </section>
 
+     <br>
+     <hr>
+     <br>
+
+     <section id="Edu">
+          <div>
+            <div>
+                <h2>Education</h2>
+            </div>
+            <div class="edu">
+                <section  class="ed" v-for="education in educationData()" :key="education">
+                    <education-comp>
+                        <template #education>
+                        <h3>{{education.education}}</h3>
+                        </template>
+                        <br>
+                        <template #image>
+                            <img :src='education.image' class="eduImg">
+                        </template>
+                        <br>
+                        <template #eduDesc>
+                            <h4>{{ education.eduDesc }}</h4>
+                        </template>
+                        <br>
+                        <template #years>
+                            <h4>{{education.years}}</h4>
+                        </template>
+                    </education-comp>
+                </section>
+            </div>
+            <div class="expHead">
+                <h2>Experiences</h2>
+            </div>
+            <div class="exp">
+                <section v-for="exp in experienceData()" :key="exp">
+                    <experience-comp>
+                        <template #company>
+                            <h3>{{exp.company}}</h3>
+                        </template>
+                        <br>
+                        <template #image>
+                            <img :src='exp.image' class="eduImg">
+                        </template>
+                        <br>
+                        <template #position>
+                            <h4>{{ exp.position }}</h4>
+                        </template>
+                        <br>
+                        <template #jobDes>
+                            <h4>{{ exp.jobDes }}</h4>
+                        </template>
+                        <br>
+                        <template #years>
+                            <h4> {{exp.years}}</h4>
+                        </template>
+                    </experience-comp>
+                </section>
+            </div>
+        </div>
+     </section>
+     <br>
+     <hr>
+     <br>
+     <section id="project">
+      <div>
+        <div>
+            <h2 class="projectsHead">Previous Projects</h2>
+        </div>
+        <div class="projects">
+            <section id="proj-card" v-for="projects in projectsData()" :key="projects">
+                <projects-comp>
+                <template #Pimage>
+                    <img :src="projects.Pimage" class="project-image" >
+                </template>
+                <template #Pname>
+                    <h3 class="project-title">{{ projects.Pname }}</h3>
+                </template>
+                <template #description>
+                    <h5 class="project-text">{{ projects.description }}</h5>
+                </template>
+                <template #github>
+                    <button class="project-btn1"><a :href="projects.github" target="_blank">Github</a></button>
+                </template>
+                <template #live>
+                    <button class="project-btn2"><a :href="projects.live" target="_blank">Hosted</a></button>
+                </template>
+                </projects-comp>
+          </section>
+        </div>
+      </div>
+     </section>
+
+     <br>
+     <hr>
+     <br>
+
+     <section id="contacts">
+      <div>
+        <div class="contact-head">
+            <h2>Lets Get In Touch</h2>
+        </div>
+        <div id="whoop">
+            <div class="links">
+                <img src="https://mrshane06.github.io/personal-portfolio-images/logos/Logo2.png" id="logo2">
+                <p><img src="https://mrshane06.github.io/personal-portfolio-images/logos/gmail_icon.png" id="gmail">niekerkkeegan007@gmail.com</p>
+                <p><img src="https://mrshane06.github.io/personal-portfolio-images/logos/location_icon.png" id="location">Bonteheuwel , Cape Town</p>
+                <p><img src="https://mrshane06.github.io/personal-portfolio-images/logos/phone_icon.png" id="phone">081 421 4195</p>
+                <p><img src="https://cdn-icons-png.flaticon.com/512/4926/4926624.png" id="git"><a href="https://github.com/mrshane06" target="_blank" class="git">github</a></p>
+                <p><img src="https://cdn-icons-png.flaticon.com/512/1384/1384014.png" id="git"><a href="https://www.linkedin.com/in/keegan-niekerk-bb1278309/" target="_blank" class="git">linkedin</a></p>
+            </div>
+            <section id="bam">
+                <div class="col-lg-8 mt-5 mt-lg-0 mt-md-0 mt-sm-0">
+                  <form
+                    action="https://formspree.io/f/manyyavl"
+                    method="POST"
+                  >
+                    <div class="row">
+                        <div class="col-md-6 form-group">
+                        <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="col-md-6 form-group mt-3 mt-md-0">
+                        <input type="email" class="form-control" name="email" id="surname" placeholder="Your Email" required>
+                        </div>
+                    </div>
+                    <div class="form-group mt-3">
+                        <textarea class="form-control" name="comments" rows="5" placeholder="Comments" required></textarea>
+                    </div>
+                    <div class="text-center mt-4 send"><button id="sub" type="submit">Submit</button></div>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </div>
+     </section>
 </template>
 
 <script>
@@ -98,12 +232,18 @@ import AboutComp from '@/components/AboutComp.vue'
 import SkillsComp from '@/components/SkillsComp.vue';
 import SoftSkillsComp from '@/components/SoftSkillsComp.vue';
 import AchievementsComp from '@/components/AchievementsComp.vue';
+import EducationComp from '@/components/EducationComp.vue';
+import ExperienceComp from '@/components/ExperienceComp.vue';
+import ProjectsComp from '@/components/ProjectsComp.vue';
 export default {
   components:{
     AboutComp,
     SkillsComp,
     SoftSkillsComp,
-    AchievementsComp
+    AchievementsComp,
+    EducationComp,
+    ExperienceComp,
+    ProjectsComp
   },
   methods:{
         aboutData(){
@@ -118,6 +258,15 @@ export default {
         achievementsData(){
             return this.$store.state.achievements
         },
+        educationData(){
+            return this.$store.state.education
+        },
+        experienceData(){
+            return this.$store.state.experiences
+        },
+        projectsData(){
+            return this.$store.state.projects
+        },
     },
     computed:{
         getData(){
@@ -131,6 +280,13 @@ export default {
 </script>
 
 <style scoped>
+
+/* Headers */
+
+
+
+
+
 
 .bod {
     margin: auto;
@@ -222,13 +378,13 @@ animation: rotate 5s infinite ease;
   gap: 1em;
 }
 .linkedin{
-  width: 50px;
-  height: 50px;
+  width: 35px;
+  height: 35px;
   border-radius: 100%;
 }
 .git1{
-  width: 50px;
-  height: 50px;
+  width: 35px;
+  height: 35px;
   border-radius: 100%;
 }
 button{
@@ -298,5 +454,279 @@ width: 200px;
 padding: 0px;
 animation: rotate 5s infinite ease;
 }
+}
+
+/* education */
+h2{
+        margin-top: 40px;
+    }
+    .eduImg{
+        width: 80px;
+        height: 80px;
+        border-radius: 20px;
+    }
+    .ed{
+        width: 340px;
+        padding-left: 85px;
+    }
+    .edu{
+        display: grid;
+        grid-template-columns: repeat(3 ,1fr);
+    }
+    /* experience */
+    .expHead{
+        margin-top: 0;
+    }
+    .exp{
+        width: 340px;
+        padding-left: 85px;
+        margin-left: 495px;
+    }
+    /* media queries */
+
+    /* 840px */
+
+    @media only screen and (max-width:840px){
+    /* education */
+    .ed{
+        padding-left: 18px;
+    }
+    .edu{
+        display: grid;
+        grid-template-columns: repeat(2 ,1fr);
+    }
+    /* experience */
+    .exp{
+        margin-left: 150px;
+    }
+}
+
+    /* 400px */
+
+    @media only screen and (max-width:400px){
+    /* education */
+    h2{
+        margin-top: 35px;
+    }
+    .ed{
+        width: 340px;
+        padding-left: 18px;
+    }
+    .edu{
+        display: grid;
+        grid-template-columns: repeat(1 ,1fr);
+    }
+    /* experience */
+    .expHead{
+        margin-top: 0;
+    }
+    .exp{
+        width: 340px;
+        padding-left: 0px;
+        margin-left: 18px;
+    }
+}
+
+    /* 360px */
+
+    @media only screen and (max-width:360px){
+    .ed{
+        padding-left: 0px;
+    }
+    /* experience */
+    .exp{
+        margin-left: 0px;
+    }
+}
+
+    /* 320px */
+
+    @media only screen and (max-width:320px){
+    /* education */
+    .ed{
+        width: 300px;
+    }
+    /* experience */
+    .exp{
+        width: 300px;
+    }
+}
+
+/* Contacts */
+
+/* head */
+#whoop{
+    display: flex;
+}
+.contact-head{
+    width: 260px;
+    padding-top: 30px;
+}
+@keyframes rotate{
+  100% {transform: rotate(360deg);}
+}
+#logo2{
+  height: 80px;
+  width: 80px;
+  padding: 26px;
+  animation: rotate 5s infinite ease;
+}
+/* links */
+.links{
+    border: 2px solid rgb(255, 255, 255);
+    background-color: #ffffff;
+    width: 250px;
+    height: 340px;
+    margin-left: 60px;
+    margin-top: 50px;
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+#gmail{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+#location{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+#git{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+#phone{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+.git{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+/* contacts */
+#bam{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 48px;
+}
+#sub{
+    width: 70px;
+    margin-top: 10px;
+    height: 30px;
+    border-radius: 60px;
+    color: rgb(91, 85, 85);
+    margin-left: 80px;
+}
+input{
+  background-color: white;
+  border:rgb(77, 73, 73) 2px solid;
+  width: 600px;
+  height: 30px;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 5px;
+  margin-left: 110px;
+}
+textarea{
+  background-color: white;
+  border: rgb(77, 73, 73) 2px solid;
+  width: 605px;
+  height: 200px;
+  margin-left: 100px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+button{
+  background-color: white;
+  border: rgb(77, 73, 73) 2px solid;
+  margin-bottom: 91px;
+}
+
+    /* media queries */
+
+    /* 840px */
+
+@media only screen and (max-width:840px){
+  .contact-head{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: 400px;
+  }
+  #whoop{
+    display: block;
+  }
+    /* links */
+  .links{
+    border: 2px solid black;
+    height: 340px;
+    margin-left: 100px;
+    margin-right: 110px;
+    margin-top: 0px;
+    padding: 0px;
+  }
+    input{
+        width: 600px;
+        margin-top: 10px;
+        margin-left: 0px;
+        padding: 5px;
+        margin-left: 0px;
+    }
+    textarea{
+        width: 605px;
+        height: 180px;
+        margin-left: 0px;
+        margin-right: 5px;
+    }
+    #sub{
+        margin-left: 0px;
+    }
+}
+
+    /* 400px */
+
+@media only screen and (max-width:400px){
+  .contact-head{
+    padding: 50px;
+    width: 400px;
+  }
+  #whoop{
+    display: block;
+  }
+  .contact-head{
+    width: 260px;
+    padding-top: 30px;
+  }
+    /* links */
+  .links{
+    border: 2px solid black;
+    height: 340px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 0px;
+    padding: 0px;
+  }
+    input{
+        width: 295px;
+        margin-top: 10px;
+        margin-left: 0px;
+        padding: 5px;
+        margin-left: 0px;
+    }
+    textarea{
+        width: 300px;
+        height: 200px;
+        margin-left: 0px;
+        margin-right: 5px;
+    }
+    #sub{
+        margin-left: 0px;
+    }
 }
 </style>
