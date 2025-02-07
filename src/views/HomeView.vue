@@ -452,17 +452,21 @@ button{
   margin-top: 0px;
 }
 button{
+  margin: 0;
+  margin-top: 10px;
+  /* margin-bottom: 30px; */
   margin-left: 30px;
   margin-right: 30px;
 }
 #links{
   margin-top: 0px;
-  margin-left: 85%;
+  margin-left: 0%;
 }
 h2{
   padding-top: 0px;
 }
 #logo{
+margin-top: 155px;
 height: 200px;
 width: 200px;
 padding: 0px;
