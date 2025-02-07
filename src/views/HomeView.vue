@@ -17,7 +17,7 @@
         <p><a href="https://github.com/mrshane06" target="_blank"><img src="https://mrshane06.github.io/vue-portfolio-images/logos/github%20logo.png"  class="git1" ></a></p>
         <p><a href="https://www.linkedin.com/in/keegan-niekerk-bb1278309/" target="_blank"><img src="https://mrshane06.github.io/vue-portfolio-images/logos/linkedin.png"  class="linkedin" ></a></p>
       </div>
-      <a href="" target="_blank"><button class="CV"> View My CV </button></a>
+      <a href="https://mrshane06.github.io/personal-portfolio-images/Keegan%20niekerk%20CV.pdf" target="_blank"><button class="CV"> View My CV </button></a>
     </div>
     <br><br>
     <hr>
@@ -39,6 +39,15 @@
                               <h4 class="aboutText">{{about.about}}</h4>
                             </template>
                         </about-comp>
+                        <div>
+                          <h2>Interests :</h2>
+                          <h4>Cars</h4>
+                          <h4>Engineering</h4>
+                          <h4>Technology</h4>
+                          <h4>Gaming</h4>
+                          <h4>Anime</h4>
+                          <h4>Music</h4>
+                        </div>
               </section>
             </div>
             <div class="meep">
@@ -653,7 +662,7 @@ textarea{
   margin-bottom: 10px;
   border-radius: 10px;
 }
-button{
+.button{
   background-color: white;
   border: rgb(77, 73, 73) 2px solid;
   margin-bottom: 91px;
@@ -716,9 +725,8 @@ button{
     /* links */
   .links{
     border: 2px solid black;
-    height: 340px;
-    margin-left: 30px;
-    margin-right: 30px;
+    height: 360px;
+    margin-left: 43px;
     margin-top: 0px;
     padding: 0px;
   }
@@ -736,7 +744,7 @@ button{
         margin-right: 5px;
     }
     #sub{
-        margin-left: 0px;
+        margin-left: 40px;
     }
 }
 </style>
