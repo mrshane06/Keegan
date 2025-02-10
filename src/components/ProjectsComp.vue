@@ -14,7 +14,7 @@ export default {
   props:['cover']
 }
 </script>
-<style>
+<style >
 
 /* Projects */
 
@@ -77,7 +77,7 @@ export default {
 
   /* 840px */
 
-  @media only screen and (max-width:840px){
+  /* @media only screen and (max-width:840px){
   .projectsHead{
     padding: 30px;
   }
@@ -85,11 +85,20 @@ export default {
     display:grid;
     grid-template-columns:repeat(2,1fr);
   }
-  
+
   #proj-card{
-  margin-left: 60px;
-}
-}
+    margin-left: 60px;
+  }
+  #proj-card{
+    width: 18.5rem;
+  }
+  .project-btn1{
+    margin-right: 0px;
+  }
+  .project-btn2{
+    margin-left: 0px;
+  }
+} */
 
   /* 400px */
 
@@ -103,10 +112,11 @@ export default {
   }
 
   #proj-card{
-  background-color: white;
-  box-shadow: black 5px 5px 5px , -1px -1px 2px;
-  width: 16rem; 
-  height: 26rem;
+    background-color: rgb(0, 0, 0);
+  border: 2px solid white;
+  box-shadow: black 3px 3px 3px , -3px -3px 3px black;
+  width: 18.5rem;
+  height: 28rem;
   margin-bottom: 50px;
   margin-left: 100px;
   border-radius: 10px;
@@ -122,8 +132,23 @@ export default {
   padding: 10px;
   border-radius: 50px;
   background-color: #ccd8c1;
-  margin-right: 15px;
+  margin-right: 0px;
 }
+
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Adjust spacing between buttons */
+}
+
+.project-btn1, .project-btn2 {
+  border-radius: 50px;
+  background-color: #ccd8c1;
+  padding: 10px 20px;
+  text-align: center;
+}
+
 
 .project-btn1 a{
   text-decoration:none;
@@ -134,7 +159,7 @@ export default {
   padding: 10px;
   border-radius: 50px;
   background-color: #ccd8c1;
-  margin-left: 15px;
+  margin-left: 0px;
 }
 
 .project-btn2 a{

@@ -28,7 +28,7 @@
           <div id="about_info">
             <div>
               <h2 class="aboutHead">A little bit about me:</h2>
-              <section v-for="about in aboutData()" :key="about" data-aos="fade-right">
+              <section v-for="about in aboutData()" :key="about" data-aos="zoom-in">
                         <about-comp>
                             <template #about>
                               <img :src='about.me' id="me">
@@ -55,7 +55,7 @@
                 <h2 class="whoop">Technical Skills</h2>
               </div>
               <div class="bottom">
-                  <section v-for="skills in skillsData()" :key="skills" data-aos="fade-left">
+                  <section v-for="skills in skillsData()" :key="skills" data-aos="zoom-in">
                           <skills-comp>
                               <template #img>
                                 <img :src='skills.img' id="skill">
@@ -70,7 +70,7 @@
                   <h2 class="whoop1">Soft Skills</h2>
               </div>
               <div class="bottom2">
-                <section v-for="soft in softSkillsData()" :key="soft" data-aos="fade-right">
+                <section v-for="soft in softSkillsData()" :key="soft" data-aos="zoom-in">
                   <soft-skills-comp>
                     <template #softImg>
                       <img :src='soft.softImg' id="softSkills">
@@ -85,7 +85,7 @@
                   <h2 class="">Badges & Achievements</h2>
               </div>
               <div class="bottom3">
-                <section v-for="ach in achievementsData()" :key="ach" data-aos="fade-right">
+                <section v-for="ach in achievementsData()" :key="ach" data-aos="zoom-in">
                   <achievements-comp>
                     <template #badges>
                       <img :src='ach.badges' id="achieve">
@@ -104,7 +104,7 @@
      <hr>
      <br>
 
-     <section id="Edu" data-aos="zoom-out-down">
+     <section id="Edu" data-aos="zoom-in">
           <div>
             <div>
                 <h2 class="eduhead">Education</h2>
@@ -134,7 +134,7 @@
                 <h2>Experiences</h2>
             </div>
             <div class="exp">
-                <section v-for="exp in experienceData()" :key="exp"  data-aos="zoom-out-down">
+                <section v-for="exp in experienceData()" :key="exp"  data-aos="zoom-in">
                     <experience-comp>
                         <template #company>
                             <h3>{{exp.company}}</h3>
@@ -202,7 +202,7 @@
             <h2>Lets Get In Touch</h2>
         </div>
         <div id="whoop">
-            <div class="links" data-aos="fade-right">
+            <div class="links" data-aos="zoom-in">
                 <img src="https://mrshane06.github.io/personal-portfolio-images/logos/Logo2.png" id="logo2">
                 <p><img src="https://mrshane06.github.io/personal-portfolio-images/logos/gmail_icon.png" id="gmail">niekerkkeegan007@gmail.com</p>
                 <p><img src="https://mrshane06.github.io/personal-portfolio-images/logos/location_icon.png" id="location">Bonteheuwel , Cape Town</p>
@@ -210,7 +210,7 @@
                 <p><img src="https://cdn-icons-png.flaticon.com/512/4926/4926624.png" id="git"><a href="https://github.com/mrshane06" target="_blank" class="git">github</a></p>
                 <p><img src="https://cdn-icons-png.flaticon.com/512/1384/1384014.png" id="git"><a href="https://www.linkedin.com/in/keegan-niekerk-bb1278309/" target="_blank" class="git">linkedin</a></p>
             </div>
-            <section id="bam" data-aos="fade-left">
+            <section id="bam" data-aos="zoom-in">
                 <div class="col-lg-8 mt-5 mt-lg-0 mt-md-0 mt-sm-0">
                   <form
                     action="https://formspree.io/f/manyyavl"
@@ -474,6 +474,34 @@ animation: rotate 5s infinite ease;
 }
 }
 
+/* 360px */
+
+@media only screen and (max-width:360px){
+#logo{
+  margin-top: 0px;
+}
+button{
+  margin: 0;
+  margin-top: 10px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+#links{
+  margin-top: 0px;
+  margin-left: 0%;
+}
+h2{
+  padding-top: 0px;
+}
+#logo{
+margin-top: 155px;
+height: 200px;
+width: 200px;
+padding: 0px;
+animation: rotate 5s infinite ease;
+}
+}
+
 /* education */
 h2{
         margin-top: 40px;
@@ -716,7 +744,8 @@ textarea{
 
 @media only screen and (max-width:400px){
   .contact-head{
-    padding: 50px;
+    padding: 0px;
+    padding-bottom: 30px;
     width: 400px;
   }
   #whoop{
