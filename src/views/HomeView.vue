@@ -759,6 +759,7 @@ textarea{
   .links{
     border: 2px solid black;
     height: 360px;
+    width: 270px;
     margin-left: 43px;
     margin-top: 0px;
     padding: 0px;
