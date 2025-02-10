@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section id="home">
     <div id="animate">
       <img src="https://mrshane06.github.io/personal-portfolio-images/logos/Logo2.png" id="logo">
     </div>
@@ -19,15 +19,15 @@
       </div>
       <a href="https://mrshane06.github.io/personal-portfolio-images/Keegan%20niekerk%20CV.pdf" target="_blank"><button class="CV"> View My CV </button></a>
     </div>
-    <br><br>
-    <hr>
-  </section>
 
-  <section id="about">
-        <h1 id="about1">About</h1>
+  </section>
+    <br><br>
+    <hr id="about">
+  <section>
+        <h1 id="about1">Learn a bit more about me:</h1>
           <div id="about_info">
             <div>
-              <h2 class="aboutHead">A little bit about me:</h2>
+              <!-- <h2 class="aboutHead">Learn a bit more about me:</h2> -->
               <section v-for="about in aboutData()" :key="about" data-aos="zoom-in">
                         <about-comp>
                             <template #about>
@@ -40,13 +40,10 @@
                             </template>
                         </about-comp>
                         <div>
-                          <h2>Interests :</h2>
-                          <h4>Cars</h4>
-                          <h4>Engineering</h4>
-                          <h4>Technology</h4>
-                          <h4>Gaming</h4>
-                          <h4>Anime</h4>
-                          <h4>Music</h4>
+                          <h2>Soft Skills :</h2>
+                          <h4>Computer Literacy , Adaptability</h4>
+                          <h4>Team Work , Attention To Detail</h4>
+                          <h4>Communication</h4>
                         </div>
               </section>
             </div>
@@ -65,21 +62,6 @@
                               </template>
                           </skills-comp>
                   </section>
-              </div>
-              <div>
-                  <h2 class="whoop1">Soft Skills</h2>
-              </div>
-              <div class="bottom2">
-                <section v-for="soft in softSkillsData()" :key="soft" data-aos="zoom-in">
-                  <soft-skills-comp>
-                    <template #softImg>
-                      <img :src='soft.softImg' id="softSkills">
-                    </template>
-                    <template #soft>
-                      <h4 class="skillText">{{soft.soft}}</h4>
-                    </template>
-                  </soft-skills-comp>
-                </section>
               </div>
               <div>
                   <h2 class="">Badges & Achievements</h2>
@@ -101,10 +83,10 @@
      </section>
 
      <br>
-     <hr>
+     <hr id="Edu">
      <br>
 
-     <section id="Edu" data-aos="zoom-in">
+     <section  data-aos="zoom-in">
           <div>
             <div>
                 <h2 class="eduhead">Education</h2>
@@ -161,9 +143,10 @@
         </div>
      </section>
      <br>
-     <hr>
+     <hr id="project">
      <br>
-     <section id="project">
+
+     <section>
       <div>
         <div>
             <h2 class="projectsHead">Previous Projects</h2>
@@ -239,7 +222,6 @@
 <script>
 import AboutComp from '@/components/AboutComp.vue'
 import SkillsComp from '@/components/SkillsComp.vue';
-import SoftSkillsComp from '@/components/SoftSkillsComp.vue';
 import AchievementsComp from '@/components/AchievementsComp.vue';
 import EducationComp from '@/components/EducationComp.vue';
 import ExperienceComp from '@/components/ExperienceComp.vue';
@@ -248,7 +230,6 @@ export default {
   components:{
     AboutComp,
     SkillsComp,
-    SoftSkillsComp,
     AchievementsComp,
     EducationComp,
     ExperienceComp,
@@ -610,7 +591,7 @@ h2{
 }
 .contact-head{
     width: 260px;
-    padding-top: 30px;
+    padding-bottom: 30px;
     margin-left: 40px;
 }
 @keyframes rotate{
@@ -624,12 +605,14 @@ h2{
 }
 /* links */
 .links{
-    border: 2px solid rgb(255, 255, 255);
+    border: 2px solid rgb(0, 0, 0);
     background-color: #ffffff;
-    width: 250px;
-    height: 340px;
-    margin-left: 230px;
-    margin-top: 50px;
+    width: 18.5rem;
+    height: 22rem;
+    margin-bottom: 130px;
+    margin-left: 100px;
+    border-radius: 10px;
+    margin-top: 10px;
     padding: 10px;
     text-decoration: none;
     color: rgb(0, 0, 0);
@@ -665,14 +648,15 @@ h2{
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     display: flex;
     justify-content: center;
-    padding: 48px;
+    padding: 20px;
 }
 #sub{
     width: 70px;
     margin-top: 10px;
     height: 30px;
     border-radius: 60px;
-    color: rgb(91, 85, 85);
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
     margin-left: 80px;
 }
 input{
@@ -689,8 +673,9 @@ textarea{
   background-color: white;
   border: rgb(77, 73, 73) 2px solid;
   width: 605px;
-  height: 200px;
+  height: 180px;
   margin-left: 100px;
+  margin-top: 10px;
   margin-bottom: 10px;
   border-radius: 10px;
 }
@@ -758,9 +743,11 @@ textarea{
     /* links */
   .links{
     border: 2px solid black;
-    height: 360px;
-    width: 270px;
-    margin-left: 43px;
+    width: 18.5rem;
+    height: 22rem;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    border-radius: 10px;
     margin-top: 0px;
     padding: 0px;
   }

@@ -16,7 +16,7 @@
       <div class="navbar-start">
         <ul>
           <li>
-            <a href="/">Home</a>
+            <a href="#home">Home</a>
           </li>
           <li>
             <a href="#about">About</a>
@@ -57,14 +57,24 @@ export default {
 </script>
 
 <style scoped>
+html {
+  scroll-behavior: smooth;
+}
+
 .navbar {
   background-color: #ccd8c1;
-  text-align: right;
+  text-align: center; /* Center text */
   padding: 30px;
   position: fixed;
   top: 10px;
-  width: 95%;
+  width: 95%; /* Ensure full width */
   z-index: 1000;
+}
+
+.navbar-start {
+  display: flex;
+  justify-content: center; /* Center links */
+  width: 100%;
 }
 
 .navbar-start ul {
@@ -123,10 +133,9 @@ export default {
 
 @media (max-width: 500px) {
   .navbar {
-  width: 80%;
-}
+    width: 80%;
+  }
 
-@media (max-width: 500px) {
   .navbar-start ul {
     display: flex;
     flex-direction: column;
@@ -141,7 +150,6 @@ export default {
   .navbar-start a {
     width: 100%;
   }
-}
 
   /* Display the hamburger menu on small screens */
   .navbar-burger {

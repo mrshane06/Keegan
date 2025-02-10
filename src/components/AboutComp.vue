@@ -14,10 +14,9 @@ export default {
     display: flex;
   }
   /* about */
-  .aboutHead{
-    padding-left: 40px;
+  #about1{
     padding-top: 5px;
-    padding-bottom: 5px;
+    padding-bottom: 40px;
   }
   #me{
     width: 240px;
