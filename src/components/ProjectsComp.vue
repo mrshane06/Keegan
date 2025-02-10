@@ -85,13 +85,6 @@ export default {
     display:grid;
     grid-template-columns:repeat(2,1fr);
   }
-
-  #proj-card{
-    margin-left: 60px;
-  }
-  #proj-card{
-    width: 18.5rem;
-  }
   .project-btn1{
     margin-right: 0px;
   }
@@ -113,42 +106,27 @@ export default {
 
   #proj-card{
     background-color: rgb(0, 0, 0);
-  border: 2px solid white;
-  box-shadow: black 3px 3px 3px , -3px -3px 3px black;
-  width: 18.5rem;
-  height: 28rem;
-  margin-bottom: 50px;
-  margin-left: 100px;
-  border-radius: 10px;
+    border: 2px solid white;
+    box-shadow: black 3px 3px 3px , -3px -3px 3px black;
+    width: 18.5rem;
+    height: 28rem;
+    margin-bottom: 50px;
+    margin-left: 100px;
+    border-radius: 10px;
 }
 
 .project-image{
-  width: 240px;
-  height: 200px;
-  padding-top: 10px;
+    width: 240px;
+    height: 200px;
+    padding-top: 10px;
 }
 
 .project-btn1{
   padding: 10px;
   border-radius: 50px;
   background-color: #ccd8c1;
-  margin-right: 0px;
+  margin-right: 15px;
 }
-
-
-.button-container {
-  display: flex;
-  justify-content: center;
-  gap: 10px; /* Adjust spacing between buttons */
-}
-
-.project-btn1, .project-btn2 {
-  border-radius: 50px;
-  background-color: #ccd8c1;
-  padding: 10px 20px;
-  text-align: center;
-}
-
 
 .project-btn1 a{
   text-decoration:none;
@@ -159,7 +137,7 @@ export default {
   padding: 10px;
   border-radius: 50px;
   background-color: #ccd8c1;
-  margin-left: 0px;
+  margin-left: 15px;
 }
 
 .project-btn2 a{
