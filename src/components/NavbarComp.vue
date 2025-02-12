@@ -134,6 +134,7 @@ html {
 @media (max-width: 500px) {
   .navbar {
     width: 80%;
+    top: 3px;
   }
 
   .navbar-start ul {

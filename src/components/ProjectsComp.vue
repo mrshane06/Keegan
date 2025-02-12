@@ -109,7 +109,7 @@ export default {
     border: 2px solid white;
     box-shadow: black 3px 3px 3px , -3px -3px 3px black;
     width: 18.5rem;
-    height: 28rem;
+    height: 30rem;
     margin-bottom: 50px;
     margin-left: 100px;
     border-radius: 10px;
@@ -122,9 +122,6 @@ export default {
 }
 
 .project-btn1{
-  padding: 10px;
-  border-radius: 50px;
-  background-color: #ccd8c1;
   margin-right: 15px;
 }
 
@@ -134,9 +131,6 @@ export default {
 }
 
 .project-btn2{
-  padding: 10px;
-  border-radius: 50px;
-  background-color: #ccd8c1;
   margin-left: 15px;
 }
 

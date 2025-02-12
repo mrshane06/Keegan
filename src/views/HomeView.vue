@@ -746,7 +746,7 @@ textarea{
     width: 18.5rem;
     height: 22rem;
     margin-bottom: 50px;
-    margin-left: 20px;
+    margin-left: 38px;
     border-radius: 10px;
     margin-top: 0px;
     padding: 0px;
