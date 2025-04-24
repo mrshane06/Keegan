@@ -209,7 +209,7 @@ export default {
     margin-left: 25px;
   }
   .bottom3{
-    margin-left: 25px;
+    margin-left: 20px;
   }
 }
 

@@ -666,6 +666,16 @@ h2{
         }
   }
 
+  @media only screen and (max-width:360px){
+    .certs{
+        margin-top: 35px;
+        display: grid;
+        width: 300px;
+        margin-left: 22px;
+        grid-template-columns: repeat(1 ,1fr);
+      }
+  }
+
 /* Contacts */
 
 /* head */
