@@ -640,7 +640,7 @@ h2{
     width: 200px;
     transition: 1s;
     border: 2px solid white;
-    box-shadow: white 3px 3px 3px , -3px -3px 3px white;
+    box-shadow: black 3px 3px 3px , -3px -3px 3px black;
 }
 
 #certificates:hover{
@@ -666,7 +666,7 @@ h2{
             width: 300px;
             transition: 1s;
             border: 2px solid White;
-            box-shadow: white 3px 3px 3px , -3px -3px 3px White;
+            box-shadow: black 3px 3px 3px , -3px -3px 3px black;
         }
   }
 
