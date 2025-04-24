@@ -639,6 +639,8 @@ h2{
     height: 250px;
     width: 200px;
     transition: 1s;
+    border: 2px solid black;
+    box-shadow: black 3px 3px 3px , -3px -3px 3px black;
 }
 
 #certificates:hover{
@@ -671,7 +673,7 @@ h2{
         margin-top: 35px;
         display: grid;
         width: 300px;
-        margin-left: 22px;
+        margin-left: 0px;
         grid-template-columns: repeat(1 ,1fr);
       }
   }
