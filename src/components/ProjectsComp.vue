@@ -109,7 +109,7 @@ export default {
     border: 2px solid white;
     box-shadow: black 3px 3px 3px , -3px -3px 3px black;
     width: 18.5rem;
-    height: 30rem;
+    height: 32rem;
     margin-bottom: 50px;
     margin-left: 100px;
     border-radius: 10px;

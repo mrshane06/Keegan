@@ -142,6 +142,42 @@
             </div>
         </div>
      </section>
+
+     <br>
+      <hr>
+     <br>
+
+     <section data-aos="zoom-in">
+      <div>
+        <h2 class="eduhead">Certificates</h2>
+      </div>
+
+      <div class="certs">
+        <div>
+              <a href="https://mrshane06.github.io/personal-portfolio-images/digital_certificate%20(1).pdf" target="_blank">
+                <img src="https://mrshane06.github.io/personal-portfolio-images/Screenshot%202025-02-12%20120700.png"   id="certificates">
+              </a>
+            <h4 class="certsText">Work Readiness Modules:</h4>
+            <h6 class="certsText">Yes 4 Youth</h6>
+        </div>
+        <div>
+              <a href="https://mrshane06.github.io/personal-portfolio-images/digital_certificate%20(1).pdf" target="_blank">
+                <img src="https://mrshane06.github.io/personal-portfolio-images/Screenshot%202025-02-12%20120114.png"   id="certificates">
+              </a>
+            <h4 class="certsText">Entrepreneurship Modules:</h4>
+            <h6 class="certsText">Yes 4 Youth</h6>
+          </div>
+          <div>
+              <a href="https://mrshane06.github.io/personal-portfolio-images/digital_certificate%20(1).pdf" target="_blank">
+                <img src="https://mrshane06.github.io/personal-portfolio-images/Screenshot%202025-02-12%20120147.png"   id="certificates">
+              </a>
+            <h4 class="certsText">Digital Learning Modules</h4>
+            <h6 class="certsText">Yes 4 Youth</h6>
+          </div>
+      </div>
+
+     </section>
+
      <br>
      <hr id="project">
      <br>
@@ -582,6 +618,53 @@ h2{
         width: 300px;
     }
 }
+
+/* Certificates */
+
+.certs{
+    margin-top: 35px;
+    display: grid;
+    /* width: 800px; */
+    margin-left: 180px;
+    grid-template-columns: repeat(3 ,1fr);
+    gap: 5em;
+  }
+
+  .certsText{
+    margin-right: 180px;
+  }
+
+#certificates{
+    display:grid ;
+    height: 250px;
+    width: 200px;
+    transition: 1s;
+}
+
+#certificates:hover{
+    transform: scale(1.1);
+  }
+
+  @media only screen and (max-width:400px){
+    .certs{
+        margin-top: 35px;
+        display: grid;
+        width: 300px;
+        margin-left: 37px;
+        grid-template-columns: repeat(1 ,1fr);
+      }
+      .certsText{
+          margin-right: 0px;
+          font-size: 18px;
+
+        }
+        #certificates{
+            display: grid;
+            height: 400px;
+            width: 300px;
+            transition: 1s;
+        }
+  }
 
 /* Contacts */
 
