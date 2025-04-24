@@ -665,6 +665,8 @@ h2{
             height: 400px;
             width: 300px;
             transition: 1s;
+            border: 2px solid black;
+            box-shadow: black 3px 3px 3px , -3px -3px 3px black;
         }
   }
 
