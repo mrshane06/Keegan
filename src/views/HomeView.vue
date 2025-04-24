@@ -639,8 +639,8 @@ h2{
     height: 250px;
     width: 200px;
     transition: 1s;
-    border: 2px solid black;
-    box-shadow: black 3px 3px 3px , -3px -3px 3px black;
+    border: 2px solid white;
+    box-shadow: white 3px 3px 3px , -3px -3px 3px white;
 }
 
 #certificates:hover{
@@ -665,8 +665,8 @@ h2{
             height: 400px;
             width: 300px;
             transition: 1s;
-            border: 2px solid black;
-            box-shadow: black 3px 3px 3px , -3px -3px 3px black;
+            border: 2px solid White;
+            box-shadow: white 3px 3px 3px , -3px -3px 3px White;
         }
   }
 
@@ -675,7 +675,7 @@ h2{
         margin-top: 35px;
         display: grid;
         width: 300px;
-        margin-left: 0px;
+        margin-left: 22px;
         grid-template-columns: repeat(1 ,1fr);
       }
   }
